@@ -97,6 +97,7 @@ section{
 	color: black;
 	margin-bottom: 20px;
 	font-size: 25px;
+	list-style: none;
 }	
 .central-flex{
 	display: flex;
@@ -149,7 +150,8 @@ p{
 	font-size: 30px;
 	text-align: center;
 	padding: 20px;
-	content: normal;	
+	content: normal;
+	list-style: none;	
 }		
 /* Discos */
 .grid{
