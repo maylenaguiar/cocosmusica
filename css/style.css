@@ -279,4 +279,26 @@ footer{
 	text-align:center;
 	padding-top: 20px;
 }
+/* media queries*/
+@media (max-width: 414px) {
+h1{
+	text-align: left;
+	font-size: 16px;
+}	
+iframe {
+	width: 460px;
+	height: 215px;
+}	
+.logo{
+	width:200px;
+	height: 120px; 
+}
+.temas{
+	display: none;
+}
+h2{
+	text-align: left;
+}
+
+}
 
