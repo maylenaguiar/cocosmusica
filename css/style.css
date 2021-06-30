@@ -7,6 +7,9 @@ body {
   background-image:radial-gradient(black,grey);
   font-family: 'Kaushan Script', cursive;
 }
+.navcentrado{
+	text-align: center;
+}
 h1{
 	color:#FFFFFF;
 	text-align:center;
