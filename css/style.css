@@ -126,7 +126,7 @@ p{
 }	
 .banda{
 	grid-area: banda;
-	text-align:left;
+	text-align:center;
 	font-size: 19px;
 }	
 .banda__img{
