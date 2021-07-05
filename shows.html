@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	
 	<title>Shows</title>
 </head>
 <body>
@@ -24,33 +26,50 @@
 			<!--Fin navegador -->
 	</header>
 	<!-- Contenido principal -->
-	<main>
-		<h2>Shows 2021 
-		</h2>
-				<div class="showsfoto">
-					<img class="showsfoto" src="img/9.jpg">
-						<a href="https://www.facebook.com/urbanaradio.com.mx/videos/758301241521869/"
-						class="showsenlace" target=”_blank”> Ver último show			
-						</a>
-				</div>
+<main>
+	<h2>Shows 2021</h2>
+		<div class="showsfoto">
+			<img class="showsfoto" src="img/9.jpg">
+			<div class="botonCentrado">
+			<a href="https://www.facebook.com/urbanaradio.com.mx/videos/758301241521869/" target=”_blank”><button type="button" class="btn btn-outline-light">Ver último show</button>
+			</a>
+			</div>
+		</div>
 	<!-- Contenido adicional -->	
 	<section>
 		<h3>Shows anteriores 
 		</h3> 
-			<div>
-				<div>
-					<p>Superhéroe en el Roxy</p>
-					<a href="https://youtu.be/NRrBRVTi9m4" target=”_blank”> <img src="img/rotten.jpg" alt="Roxy" class="tablaext"></a>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+			 <div class="carousel-item active">
+				<p>Superhéroe en el Roxy</p>
+					<a href="https://youtu.be/NRrBRVTi9m4" target=”_blank”> <img class="d-block w-100"  src="img/todosShow.jpg" data-src="holder.js/900x400?theme=social" alt="Roxy"></a> 
 					
-				</div>	
-				<div>
-					<p>Un poquito en Metepúa</p>
-					<a href="https://youtu.be/o5d2feBlvDA" target=”_blank”><img src="img/show.jpg" alt="Metepúa" class="tablaext"></a>	
-				</div>
-				<div>
-					<p>Con los amigos de Santana Bar</p>
-					<a href="https://youtu.be/10_38rskDkE" target=”_blank”> <img src="img/santana.jpg" alt="Santana" class="tablaext"></a>	
-				</div>
+			</div>	
+			<div class="carousel-item">
+				<p>Un poquito en Metepúa</p>
+					<a href="https://youtu.be/o5d2feBlvDA" target=”_blank”><img class="d-block w-100" src="img/bateroShow.jpg" data-src="holder.js/900x400?theme=industrial" alt="Metepúa"></a>	
+					
+			</div>
+			<div class="carousel-item">
+				<p>Con los amigos de Santana Bar</p>
+					<a href="https://youtu.be/10_38rskDkE" target=”_blank”> <img  class="d-block w-100" src="img/santanaBar.jpg" alt="Santana"></a>	
+					
+			</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+			</div>
 			</div>		
 	</section>
 <!-- Fin de contenido adicional -->
@@ -75,4 +94,5 @@
 	<!-- Fin de página -->	
 			<p>Todos los derechos reservados</p>	
 </footer>	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>

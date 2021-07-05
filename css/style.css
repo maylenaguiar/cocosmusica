@@ -307,41 +307,10 @@ body{
 	  border-radius: 15%;
 	  margin: auto;
   }	
-  .showsenlace{
-	  color: black;
-	  font-size: 22px;
-	  font-weight: bold;
-	  background-color: rgb(95, 111, 114);
-	  border-spacing: 10px;
+  .botonCentrado{
 	  text-align: center;
-	  padding: 2%;
-	  border-radius:15%;
-	  margin-top: 20px;
-  }
-  .showsenlace:hover{
-	  background-color:#fff;
-	  color:#000;
+	  margin-top: 10px;  
   }	
-  /* Shows  tabla*/
-  h3{	
-	  color: #FFFFFF;
-	  text-align: center;
-	  margin-top: 50px;
-	  margin-left: 40px;
-	  margin-bottom: 30px;
-	  font-size: 30px;
-  }	
-  .tablaext{
-	  display:block;
-	  margin-top: 10px;
-	  color: white;
-	  font-size: 24px;
-	  transition: transform .1s;
-  }
-  .tablaext:hover{
-	  transform: scale(1.1);
-  }
-  
   /* Formulario */
   form{
 	  display: flex;
@@ -390,6 +359,4 @@ body{
   }
 }
 
-
-}
 
