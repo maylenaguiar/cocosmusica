@@ -63,17 +63,6 @@ section{
 	border-radius: 15%;
 	margin: auto;
 }	
-.showsenlace{
-	color: black;
-	font-size: 22px;
-	font-weight: bold;
-	background-color: white;
-	border-spacing: 10px;
-	text-align: center;
-	padding: 2%;
-	border-radius:15%;
-	margin-top: 20px;
-}
 /* Formulario */
 .frase{
 	color: aqua;
