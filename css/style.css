@@ -147,6 +147,8 @@ body{
   }
   ul{ color: #FFFFFF;
   }
+  h3{ text-align: center;
+  }
   /* Navegador*/
   nav a{
 	  display: flex;
