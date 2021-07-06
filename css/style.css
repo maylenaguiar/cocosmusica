@@ -32,7 +32,9 @@ section{
 	display: none;
 }
 .banda__img{
-	display: none;
+	width: 220px;
+	height: 360px;
+	text-align: center;
 }	
 .integrantes{
 	background-color:white;
