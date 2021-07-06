@@ -238,13 +238,14 @@ body{
 	  grid-area: banda;
 	  text-align:center;
 	  font-size: 19px;
+	  margin:50px;
   }	
   .banda__img{
 	  grid-area: banda__img;
 	  width: 400px;
 	  height: 560px;
 	  border-radius: 20%;
-	  margin-bottom: 50px;
+	  margin:50px;
   }	
   .integrantes{
 	  background-image:url(../img/form.jpg);
@@ -252,6 +253,7 @@ body{
 	  background-size: cover;
 	  text-align: center;
 	  transform: scale(0.7,0.7);
+	  margin-top: 80px;
   }
   .integrantes__logo{
 	  width: 250px;
