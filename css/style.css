@@ -12,6 +12,36 @@ h1{
 	text-align: center;
 	font-size: 16px;
 }	
+/* Navegador*/
+.navbar-toggler-icon{
+	color: black;
+}
+nav a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 16px;
+	text-align: center;
+	text-decoration:none;
+	color: #fff;
+	padding-right:2px;
+    padding-left: 2px;
+} 
+nav li{
+	background-color:#000;
+	border:1px solid #000;
+	text-align:center;  
+	margin: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+}
+nav li:hover{
+	background-color:#fff;
+	color:#000;
+}
+ul{
+	width: 70%;
+}
 iframe {
 	width: 420px;
 	height: 210px;
@@ -107,6 +137,7 @@ footer{
 	filter: grayscale(100%);	
 }
 
+
 /* media queries*/
 @media (min-width:992px){
 
@@ -133,7 +164,8 @@ body{
 	  height: 180px; 
   }
   .logo:hover{
-	  background-color:rgb(180, 167, 167);
+	  background-color:black;
+	  border-radius: 20%;
   }
   h2{
 	  color: #FFFFFF;
@@ -150,6 +182,7 @@ body{
   h3{ text-align: center;
   }
   /* Navegador*/
+
   nav a{
 	  display: flex;
 	  flex-direction: row;
@@ -157,16 +190,16 @@ body{
 	  font-size: 16px;
 	  text-align: center;
 	  text-decoration:none;
-	  color:inherit;
+	  color:#fff;
   } 
   nav li{
 	  display:inline-block;
 	  width:10%;
 	  padding:5px 10px;
+	  margin: 20px;
 	  background-color:#000;
 	  border:1px solid #000;
-	  text-align:center;
-	  color:#fff;
+	  text-align:center;  
   }
   nav li:hover{
 	  background-color:#fff;
@@ -237,7 +270,7 @@ body{
   .banda{
 	  grid-area: banda;
 	  text-align:center;
-	  font-size: 19px;
+	  font-size: 20px;
 	  margin:50px;
   }	
   .banda__img{
@@ -255,19 +288,14 @@ body{
 	  transform: scale(0.7,0.7);
 	  margin-top: 80px;
   }
-  .integrantes__logo{
-	  width: 250px;
-	  height:320px;
-  }
   .integrantes__lista{
-	  color: #000000;
-	  font-weight: bold;
-	  font-size: 30px;
-	  text-align: center;
-	  padding: 20px;
-	  content: normal;
-	  list-style: none;	
-  }		
+	color: #000000;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	list-style: none;
+	margin: 0 auto;		  
+}		
   /* Discos */
   .grid{
 	  display: grid;
