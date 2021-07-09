@@ -13,9 +13,6 @@ h1{
 	font-size: 16px;
 }	
 /* Navegador*/
-.navbar-toggler-icon{
-	color: black;
-}
 nav a{
 	display: flex;
 	flex-direction: row;
@@ -39,9 +36,7 @@ nav li:hover{
 	background-color:#fff;
 	color:#000;
 }
-ul{
-	width: 70%;
-}
+
 iframe {
 	width: 420px;
 	height: 210px;
@@ -148,6 +143,9 @@ body{
   .navcentrado{
 	  text-align: center;
   }
+ul{
+	width: 80%;
+}
   h1{
 	  color:#FFFFFF;
 	  text-align:center;
