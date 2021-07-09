@@ -84,7 +84,11 @@ section{
 	content: normal;
 	list-style: none;	
 }	
-/* faltan Discos */
+/* Discos */
+.grid{
+	margin:auto 0;
+	text-align: center;
+}
 
  /* Shows principal */
  .showsfoto{
