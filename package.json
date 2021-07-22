@@ -1,0 +1,24 @@
+{
+  "name": "desafiosparaprimerentrega",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maylenaguiar/cocosmusica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maylenaguiar/cocosmusica/issues"
+  },
+  "homepage": "https://github.com/maylenaguiar/cocosmusica#readme",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

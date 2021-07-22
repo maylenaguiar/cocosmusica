@@ -1,0 +1,12 @@
+@mixin condicion ($colores) {
+    background-color: $colores;
+    @if $colores == white {
+      font-size: 32px
+      ;
+    } @else {
+     border: 2px dotted gray;
+    }    
+}
+.integrantes{
+    @include condicion (white)
+}

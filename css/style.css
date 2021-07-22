@@ -1,396 +1,476 @@
-*{
-	margin:0;
-	padding: 0;
-	box-sizing: border-box;
+@charset "UTF-8";
+/* Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-	background-image:radial-gradient(black,grey);
-	font-family: 'Kaushan Script', cursive;
-	color: #fff;
+
+body {
+  background-image: radial-gradient(black, grey);
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
 }
-h1{
-	text-align: center;
-	font-size: 16px;
-}	
+
+h1 {
+  text-align: center;
+  font-size: 16px;
+}
+
 /* Navegador*/
-nav a{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-size: 16px;
-	text-align: center;
-	text-decoration:none;
-	color: #fff;
-	padding-right:2px;
-    padding-left: 2px;
-} 
-nav li{
-	background-color:#000;
-	border:1px solid #000;
-	text-align:center;  
-	margin: 1px;
-	padding-right: 1px;
-	padding-left: 1px;
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2px;
+  padding-left: 2px;
 }
+
+nav li {
+  background-color: #000;
+  border: 1px solid #000;
+  text-align: center;
+  margin: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
 iframe {
-	width: 420px;
-	height: 210px;
-	margin-top: 20px;
-}	
-.logo{
-	width: 180px;
-	height: 120px; 
-}
-.temas{
-	display: none;
-}
-.fotosLocas{
-	display: none;
-}
-h2{
-	text-align: center;
-	margin-bottom: 20px;
-}
-h3{
-	font-size: 16px;
-	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	color: aquamarine;
-}
-.banda__img{
-	width: 230px;
-	height: 360px;
-	display: flex;
-	flex-direction: column;
-	margin: 70px;
-	border-radius: 15%;
-}	
-.integrantes{
-	margin-top: 20px;
-}
-.integrantes__logo{
-	display: none;
-}
-.integrantes__lista{
-	color: #000000;
-	font-weight: bold;
-	font-size: 16px;
-	text-align: center;
-	padding: 20px;
-	content: normal;
-	list-style: none;	
-}	
-/* Discos */
-.grid{
-	margin:auto 0;
-	text-align: center;
+  width: 420px;
+  height: 210px;
+  margin-top: 20px;
 }
 
- /* Shows principal */
- .showsfoto{
-	display: flex;
-	flex-direction: column;
-	margin: 50px;
-	width: 230px;
-	height:230px;
-	border-radius: 15%;
-	margin: auto;
-}	
-.botonCentrado{
-	text-align: center;
-	margin-top: 10px;  
-}	
-/* Formulario */
-.frase{
-	color: aqua;
-	text-align:center;
-	text-decoration:wavy;
-	font-size: 16px;
-}
-form{
-	display: flex;
-	justify-content: center;
-	color:#FFFFFF;
-	text-align:center;
-	font-size:14px;
-	background-image: url(../img/verde.jpg);
-	background-size: 100%;
-	margin: 50px;
-	border-radius: 10%;
+.logo {
+  width: 180px;
+  height: 120px;
 }
 
-footer{
-	color:#FFFFFF;
-	text-align:center;
-	padding-top: 50px;
-}
-		
-.imgredes-flex{
-	height:30px;
-	width:30px;	
-	padding: 5px;
-	filter: grayscale(100%);	
+.logo:hover {
+  background-color: black;
+  border-radius: 20%;
 }
 
+.temas {
+  display: none;
+}
+
+.fotosLocas {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: aquamarine;
+}
+
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.imgredes-flex {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  filter: grayscale(100%);
+}
 
 /* media queries*/
-@media (min-width:992px){
+@media (min-width: 992px) {
+  body {
+    background-image: radial-gradient(black, grey);
+    font-family: "Kaushan Script", cursive;
+  }
 
-body{
-	background-image:radial-gradient(black,grey);
-	font-family: 'Kaushan Script', cursive;
+  .navcentrado {
+    text-align: center;
   }
-  .navcentrado{
-	  text-align: center;
+
+  ul {
+    width: 80%;
   }
-ul{
-	width: 80%;
-}
-  h1{
-	  color:#FFFFFF;
-	  text-align:center;
-	  margin-top:80px;
-	  margin-bottom:80px;
-	  font-size: 45px;
+
+  h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 45px;
   }
-  img{
-	  display:inline;
-	  margin:auto;
+
+  img {
+    display: inline;
+    margin: auto;
   }
-  .logo{
-	  width:300px;
-	  height: 180px; 
+
+  .logo {
+    width: 300px;
+    height: 180px;
   }
-  .logo:hover{
-	  background-color:black;
-	  border-radius: 20%;
+
+  .logo:hover {
+    background-color: black;
+    border-radius: 20%;
   }
-  h2{
-	  color: #FFFFFF;
-	  padding: 30px;
-	  padding-bottom: 30px;
-	  margin-top: 30px;
-	  margin-left: 350px;
-	  display: flex;
-	  font-size: 32px;
-	  text-align: center;
+
+  h2 {
+    color: #FFFFFF;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 350px;
+    display: flex;
+    font-size: 32px;
+    text-align: center;
   }
-  ul{ color: #FFFFFF;
+
+  ul {
+    color: #FFFFFF;
   }
-  h3{ text-align: center;
-	font-size: 22px;
+
+  h3 {
+    text-align: center;
+    font-size: 22px;
   }
+
   /* Navegador*/
+  nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
 
-  nav a{
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: center;
-	  font-size: 16px;
-	  text-align: center;
-	  text-decoration:none;
-	  color:#fff;
-  } 
-  nav li{
-	  display:inline-block;
-	  width:10%;
-	  padding:5px 10px;
-	  margin: 20px;
-	  background-color:#000;
-	  border:1px solid #000;
-	  text-align:center;  
+  nav li {
+    display: inline-block;
+    width: 10%;
+    padding: 5px 10px;
+    margin: 20px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
   }
-  nav li:hover{
-	  background-color:rgb(92, 91, 91);
-	  color:#000;
+
+  nav li:hover {
+    background-color: #5c5b5b;
+    color: #000;
   }
+
   /* Presentación */
-  section{
-	  display: block;
-	  padding: 70px;
-  }	
-  .titulos{
-	  margin-right: 100px;
-	  margin-bottom: 100px;
-	  margin-left: 100px;
-	  border-radius: 400px;
-	  border-color: #fff;
-	  display: inline-block;
-	  width: 250px;
-	  height:320px;
-	  font-size: 25px;
+  .fotosLocas {
+    display: block;
   }
+
+  section {
+    display: block;
+    padding: 70px;
+  }
+
+  .titulos {
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    border-radius: 400px;
+    border-color: #fff;
+    display: inline-block;
+    width: 250px;
+    height: 320px;
+    font-size: 25px;
+  }
+
+  .titulos__img {
+    border-radius: 15%;
+  }
+
   /* Lista de canciones */
-  .temas{
-	  display:flex;
-	  flex-direction: column;
-	  background-image: url(../img/8.jpg);
-	  background-size: cover; 
-	  background-position: center;
-	  border-radius: 10%;
+  .temas {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
   }
-  .temas__titulo{
-	  margin-left: auto;
-	  font-size: 24px;
-	  font-weight: bold;
-	  color: #000000;
-  }	
-  .temas__lista{
-	  text-align: center;
-	  font-weight: bold;
-	  line-height: 1.5;
-	  color: black;
-	  margin-bottom: 20px;
-	  font-size: 25px;
-	  list-style: none;
-  }	
-  .central-flex{
-	  display: flex;
-	  flex-direction: row;
-	  flex-wrap: wrap;
-	  justify-content:space-evenly;
-	  align-items:stretch;
+
+  .temas__titulo {
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
   }
-  p{	
-	  color:#FFFFFF;
-	  text-align:center;
+
+  .temas__lista {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 25px;
+    list-style: none;
   }
-  /* La banda */
-  .contenido{
-	  display: grid;
-	  justify-content: center;
-	  grid-template-columns: 40% 50%;
-	  grid-template-rows: 200px 300px;
-	  grid-template-areas:
-		  "banda__img banda";
-	  grid-row-gap: 50px;
-	  grid-column-gap: 30px;
-  }	
-  .banda{
-	  grid-area: banda;
-	  text-align:center;
-	  font-size: 18px;
-	  margin:50px;
-  }	
-  .banda__img{
-	  grid-area: banda__img;
-	  width: 500px;
-	  height: 660px;
-	  border-radius: 20%;
-	  margin:50px;
-  }	
-  .integrantes{
-	  background-image:url(../img/form.jpg);
-	  background-position:center;
-	  background-size: cover;
-	  text-align: center;
-	  transform: scale(0.7,0.7);
-	  margin-top: 350px;
+
+  .central-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
   }
-  .integrantes__lista{
-	color: #000000;
-	font-weight: bold;
-	font-size: 30px;
-	text-align: center;
-	list-style: none;
-	margin: 0 auto;		  
-}		
-  /* Discos */
-  .grid{
-	  display: grid;
-	  grid-template-columns: 40% 40% auto;
-	  grid-template-rows: 100px 100px 100px;
-	  grid-template-areas: 
-				  "grid-disco1 grid-disco2 grid-footer";					
-	  grid-row-gap: 100px;
-	  grid-column-gap: 100px;
-	  justify-content: space-evenly;
-	  align-content: center;
+
+  p {
+    color: #FFFFFF;
+    text-align: center;
   }
-  .grid-disco1{
-	  grid-area: grid-disco1;
-	  color: rgb(36, 215, 221);
-	  justify-self: center;
-	  transition: transform .2s;
-  }	
-  .grid-disco1:hover{
-	  transform: scale(1.2);
-  }
-  
-  .grid-disco2{
-	  grid-area: grid-disco2;
-	  color: rgb(221, 36, 212);
-	  justify-self: center;
-	  transition: transform .2s;
-  }
-  .grid-disco2:hover{
-	  transform: scale(1.2);
-  }
-  .grid.footer{
-	  grid-area: grid-footer;
-  }
-  
-  /* Shows principal */
-  .showsfoto{
-	  display: flex;
-	  flex-direction: column;
-	  margin: 50px;
-	  width:60%;
-	  height:60%;
-	  border-radius: 15%;
-	  margin: auto;
-  }	
-  .botonCentrado{
-	  text-align: center;
-	  margin-top: 10px;  
-  }	
-  /* Formulario */
-  form{
-	  display: flex;
-	  justify-content: center;
-	  color:#FFFFFF;
-	  text-align:center;
-	  font-size:24px;
-	  padding-top:30px;
-	  padding-right: 100px;
-	  padding-bottom: 100px;
-	  padding-left: 100px;
-	  background-image: url(../img/verde.jpg);
-	  background-size: cover;
-	  margin: 50px;
-	  border-radius: 10%;
-  }
-  .frase{
-	  color: aqua;
-	  text-align:center;
-	  text-decoration:wavy;
-	  font-size: 30px;
-	  padding-left:20%;
-	  padding-right:20%;
-  }
+
   /* Redes*/
-  .redes-flex{
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: center;
-	  align-items: center;
-  }		
-  .imgredes-flex{
-	  height:50px;
-	  width:50px;	
-	  padding: 5px;
-	  filter: grayscale(100%);	
+  .redes-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  .imgredes-flex:hover{
-	  background-color:white;
+
+  .imgredes-flex {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    filter: grayscale(100%);
   }
+
+  .imgredes-flex:hover {
+    background-color: white;
+  }
+
   /* Fin de página*/
-  footer{
-	  color:#FFFFFF;
-	  text-align:center;
-	  padding-top: 20px;
+  footer {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
   }
 }
+/* Discos */
+.grid {
+  margin: auto 0;
+  text-align: center;
+}
 
+/* Shows principal */
+.showsfoto {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 230px;
+  height: 230px;
+  border-radius: 15%;
+  margin: auto;
+}
 
+.botonCentrado {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* media queries*/
+@media (min-width: 992px) {
+  /* Discos */
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 40% auto;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: "grid-disco1 grid-disco2 grid-footer";
+    grid-row-gap: 100px;
+    grid-column-gap: 100px;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  .grid-disco1 {
+    grid-area: grid-disco1;
+    color: #24d7dd;
+    justify-self: center;
+    transition: transform 0.2s;
+  }
+
+  .grid-disco1:hover {
+    transform: scale(1.2);
+  }
+
+  .grid-disco2 {
+    grid-area: grid-disco2;
+    color: #dd24d4;
+    justify-self: center;
+    transition: transform 0.2s;
+  }
+
+  .grid-disco2:hover {
+    transform: scale(1.2);
+  }
+
+  .grid.footer {
+    grid-area: grid-footer;
+  }
+
+  .imgDiscos {
+    width: 250px;
+    height: 300px;
+  }
+
+  /* Shows principal */
+  .showsfoto {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 60%;
+    height: 60%;
+    border-radius: 15%;
+    margin: auto;
+  }
+
+  .botonCentrado {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+.banda__img {
+  width: 230px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  margin: 70px;
+  border-radius: 15%;
+}
+
+.integrantes {
+  margin-top: 20px;
+}
+
+.integrantes__logo {
+  display: none;
+}
+
+.integrantes__lista {
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  content: normal;
+  list-style: none;
+}
+
+@media (min-width: 992px) {
+  /* La banda */
+  .contenido {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: "banda__img banda";
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+  }
+
+  .banda {
+    grid-area: banda;
+    text-align: center;
+    font-size: 18px;
+    margin: 50px;
+  }
+
+  .banda__img {
+    grid-area: banda__img;
+    width: 500px;
+    height: 660px;
+    border-radius: 20%;
+    margin: 50px;
+  }
+
+  .integrantes {
+    background-image: url(../img/form.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    transform: scale(0.7, 0.7);
+    margin-top: 350px;
+  }
+
+  .integrantes__lista {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+  }
+}
+/* Formulario */
+.frase {
+  color: aqua;
+  text-align: center;
+  text-decoration: wavy;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  background-image: url(../img/verde.jpg);
+  background-size: 100%;
+  margin: 50px;
+  border-radius: 10%;
+}
+
+/* media queries*/
+@media (min-width: 992px) {
+  /* Formulario */
+  form {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    background-image: url(../img/verde.jpg);
+    background-size: cover;
+    margin: 50px;
+    border-radius: 10%;
+  }
+
+  .frase {
+    color: aqua;
+    text-align: center;
+    text-decoration: wavy;
+    font-size: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+.integrantes {
+  background-color: white;
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
