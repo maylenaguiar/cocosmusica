@@ -111,9 +111,8 @@ footer{
         padding-bottom: 30px;
         margin-top: 30px;
         margin-left: 350px;
-        display: flex;
         font-size: 32px;
-        text-align: $textos-centrados;
+        display: flex;
     }
     ul{ color: #FFFFFF;
       }
@@ -149,6 +148,14 @@ footer{
 .fotosLocas{
         display: block;
     }
+.animate__animated.animate__bounceInRight{
+    --animate-duration: 4s;
+    animation-iteration-count: 5;
+}
+.animate__animated.animate__bounceInLeft{
+    --animate-duration: 4s;
+    animation-iteration-count: 5;
+}
 section{
     display: block;
     padding: 70px;	

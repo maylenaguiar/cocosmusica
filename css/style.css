@@ -133,9 +133,8 @@ footer {
     padding-bottom: 30px;
     margin-top: 30px;
     margin-left: 350px;
-    display: flex;
     font-size: 32px;
-    text-align: center;
+    display: flex;
   }
 
   ul {
@@ -176,6 +175,16 @@ footer {
   /* Presentación */
   .fotosLocas {
     display: block;
+  }
+
+  .animate__animated.animate__bounceInRight {
+    --animate-duration: 4s;
+    animation-iteration-count: 5;
+  }
+
+  .animate__animated.animate__bounceInLeft {
+    --animate-duration: 4s;
+    animation-iteration-count: 5;
   }
 
   section {
@@ -348,6 +357,11 @@ footer {
     margin-top: 10px;
   }
 }
+.banda {
+  display: flex;
+  flex-direction: column;
+}
+
 .banda__img {
   width: 230px;
   height: 360px;
