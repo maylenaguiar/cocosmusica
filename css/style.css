@@ -276,8 +276,40 @@ footer {
 }
 /* Discos */
 .grid {
-  margin: auto 0;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-disco1 {
+  grid-area: grid-disco1;
+  color: #24d7dd;
+  justify-self: center;
+  transition: transform 0.2s;
+}
+
+.grid-disco1:hover {
+  transform: scale(1.2);
+}
+
+.grid-disco2 {
+  grid-area: grid-disco2;
+  color: #dd24d4;
+  justify-self: center;
+  transition: transform 0.2s;
+}
+
+.grid-disco2:hover {
+  transform: scale(1.2);
+}
+
+.grid.footer {
+  grid-area: grid-footer;
+}
+
+.imgDiscos {
+  width: 250px;
+  height: 300px;
 }
 
 /* Shows principal */

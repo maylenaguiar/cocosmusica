@@ -1,8 +1,37 @@
 /* Discos */
 .grid{
-	margin:auto 0;
-	text-align: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
+.grid-disco1{
+    grid-area: grid-disco1;
+    color: rgb(36, 215, 221);
+    justify-self: center;
+    transition: transform .2s;
+}	
+.grid-disco1:hover{
+    transform: scale(1.2);
+}
+
+.grid-disco2{
+    grid-area: grid-disco2;
+    color: rgb(221, 36, 212);
+    justify-self: center;
+    transition: transform .2s;
+}
+.grid-disco2:hover{
+    transform: scale(1.2);
+}
+.grid.footer{
+    grid-area: grid-footer;
+}
+.imgDiscos{
+ width: 250px;
+ height: 300px;
+}
+
 
  /* Shows principal */
  .showsfoto{
