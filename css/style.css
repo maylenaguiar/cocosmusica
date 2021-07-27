@@ -29,7 +29,6 @@ nav a {
   padding-right: 2px;
   padding-left: 2px;
 }
-
 nav li {
   background-color: #000;
   border: 1px solid #000;
@@ -65,12 +64,8 @@ iframe {
 
 h2 {
   margin-bottom: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
   text-align: center;
   font-size: 22px;
-  display: flex;
-  justify-content: center;
 }
 
 h3 {
@@ -88,8 +83,6 @@ footer {
 }
 
 .imgredes-flex {
-  height: 30px;
-  width: 30px;
   padding: 5px;
   filter: grayscale(100%);
 }
@@ -158,7 +151,6 @@ footer {
     text-decoration: none;
     color: #fff;
   }
-
   nav li {
     display: inline-block;
     width: 10%;
@@ -168,8 +160,7 @@ footer {
     border: 1px solid #000;
     text-align: center;
   }
-
-  nav li:hover {
+  nav nav li:hover {
     background-color: #5c5b5b;
     color: #000;
   }
@@ -193,8 +184,7 @@ footer {
     display: block;
     padding: 70px;
   }
-
-  .titulos {
+  section .titulos {
     margin-right: 100px;
     margin-bottom: 100px;
     margin-left: 100px;
@@ -205,8 +195,7 @@ footer {
     height: 320px;
     font-size: 25px;
   }
-
-  .titulos__img {
+  section .titulos__img {
     border-radius: 15%;
   }
 
@@ -219,15 +208,13 @@ footer {
     background-position: center;
     border-radius: 10%;
   }
-
-  .temas__titulo {
+  .temas .temas__titulo {
     margin-left: auto;
     font-size: 24px;
     font-weight: bold;
     color: #000000;
   }
-
-  .temas__lista {
+  .temas .temas__lista {
     text-align: center;
     font-weight: bold;
     line-height: 1.5;
@@ -259,8 +246,6 @@ footer {
   }
 
   .imgredes-flex {
-    height: 50px;
-    width: 50px;
     padding: 5px;
     filter: grayscale(100%);
   }

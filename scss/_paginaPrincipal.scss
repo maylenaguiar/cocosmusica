@@ -13,7 +13,8 @@ h1{
 	font-size: 24px;
 }	
 /* Navegador*/
-nav a{
+nav{
+    a{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -23,15 +24,17 @@ nav a{
 	color: #fff;
 	padding-right:2px;
     padding-left: 2px;
-} 
-nav li{
+    }
+
+    li{
 	background-color:#000;
 	border:1px solid #000;
 	text-align: $textos-centrados;  
 	margin: 1px;
 	padding-right: 1px;
 	padding-left: 1px;
-}
+    }
+} 
 iframe {
 	width: 420px;
 	height: 210px;
@@ -44,7 +47,7 @@ iframe {
 .logo:hover{
     background-color:black;
     border-radius: 20%;
-}
+    }
 .temas{
 	display: none;
 }
@@ -53,12 +56,8 @@ iframe {
 }
 h2{
     margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
     text-align: $textos-centrados;
     font-size: 22px;
-    display: flex;
-    justify-content: center;
 }
 h3{
 	font-size: 16px;
@@ -73,8 +72,6 @@ footer{
 	padding-top: 50px;
 }
 .imgredes-flex{
-	height:30px;
-	width:30px;	
 	padding: 5px;
 	filter: grayscale(100%);	
 }
@@ -124,7 +121,9 @@ footer{
     }
       /* Navegador*/
     
-      nav a{
+    nav {
+        a{
+      
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -132,8 +131,9 @@ footer{
           text-align: $textos-centrados;
           text-decoration:none;
           color:#fff;
-      } 
-      nav li{
+        }
+      
+       li{
           display:inline-block;
           width:10%;
           padding:5px 10px;
@@ -141,11 +141,13 @@ footer{
           background-color:#000;
           border:1px solid #000;
           text-align:$textos-centrados;  
-      }
+        }
+
       nav li:hover{
           background-color:rgb(92, 91, 91);
           color:#000;
-      }
+        }
+    }
       /* Presentación */
 .fotosLocas{
         display: block;
@@ -161,8 +163,8 @@ footer{
 section{
     display: block;
     padding: 70px;	
-}
-.titulos{
+
+    .titulos{
         margin-right: 100px;
         margin-bottom: 100px;
         margin-left: 100px;
@@ -176,7 +178,7 @@ section{
     .titulos__img{
         border-radius: 15%;
     }
-
+}
 /* Lista de canciones */
 .temas{
     display:flex;
@@ -185,7 +187,7 @@ section{
     background-size: cover; 
     background-position: center;
     border-radius: 10%;
-}
+
     .temas__titulo{
         margin-left: auto;
         font-size: 24px;
@@ -201,17 +203,19 @@ section{
         font-size: 25px;
         list-style: none;
     }	
-    .central-flex{
+}
+.central-flex{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-evenly;
         align-items:stretch;
-    }
-    p{	
-        color:#FFFFFF;
-        text-align: $textos-centrados;
-    }
+}
+p{	
+    color:#FFFFFF;
+    text-align: $textos-centrados;
+}
+
 
 /* Redes*/
 .redes-flex{
@@ -220,9 +224,7 @@ section{
     justify-content: center;
     align-items: center;
 }		
-.imgredes-flex{
-    height:50px;
-    width:50px;	
+.imgredes-flex{	
     padding: 5px;
     filter: grayscale(100%);	
 }
