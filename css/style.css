@@ -38,12 +38,7 @@ nav li {
   padding-left: 1px;
 }
 
-iframe {
-  width: 420px;
-  height: 210px;
-  margin-top: 20px;
-}
-
+/*Logo*/
 .logo {
   width: 180px;
   height: 120px;
@@ -54,14 +49,25 @@ iframe {
   border-radius: 20%;
 }
 
+/*Video*/
+.videoResponsive {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+}
+.videoResponsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .temas {
   display: none;
 }
 
-.fotosLocas {
-  display: none;
-}
-
+/*Títulos*/
 h2 {
   margin-bottom: 20px;
   text-align: center;
@@ -76,6 +82,12 @@ h3 {
   color: aquamarine;
 }
 
+/*Sección escondida*/
+.fotosLocas {
+  display: none;
+}
+
+/*Footer*/
 footer {
   color: #FFFFFF;
   text-align: center;
@@ -92,10 +104,6 @@ footer {
   body {
     background-image: radial-gradient(black, grey);
     font-family: "Kaushan Script", cursive;
-  }
-
-  .navcentrado {
-    text-align: center;
   }
 
   ul {
@@ -165,38 +173,18 @@ footer {
     color: #000;
   }
 
-  /* Presentación */
-  .fotosLocas {
-    display: block;
+  /*Contenedor principal*/
+  .centralFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .animate__animated.animate__bounceInRight {
-    --animate-duration: 4s;
-    animation-iteration-count: 5;
-  }
-
-  .animate__animated.animate__bounceInLeft {
-    --animate-duration: 4s;
-    animation-iteration-count: 5;
-  }
-
-  section {
-    display: block;
-    padding: 70px;
-  }
-  section .titulos {
-    margin-right: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    border-radius: 400px;
-    border-color: #fff;
-    display: inline-block;
-    width: 250px;
-    height: 320px;
-    font-size: 25px;
-  }
-  section .titulos__img {
-    border-radius: 15%;
+  /*Video*/
+  .videoResponsive {
+    width: 40%;
+    padding-bottom: 20%;
   }
 
   /* Lista de canciones */
@@ -206,7 +194,8 @@ footer {
     background-image: url(../img/8.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 10%;
+    width: 40%;
+    height: 50%;
   }
   .temas .temas__titulo {
     margin-left: auto;
@@ -224,16 +213,28 @@ footer {
     list-style: none;
   }
 
-  .central-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+  /* Presentación */
+  .fotosLocas {
+    display: block;
   }
 
-  p {
-    color: #FFFFFF;
+  .animate__animated.animate__bounceInRight {
+    --animate-duration: 4s;
+    animation-iteration-count: 5;
+  }
+
+  .animate__animated.animate__bounceInLeft {
+    --animate-duration: 4s;
+    animation-iteration-count: 5;
+  }
+
+  .titulos {
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    color: #24d7dd;
     text-align: center;
   }
 
@@ -270,7 +271,7 @@ footer {
 
 .grid-disco1 {
   grid-area: grid-disco1;
-  color: #24d7dd;
+  color: aquamarine;
   justify-self: center;
   transition: transform 0.2s;
 }
@@ -434,6 +435,7 @@ footer {
     height: 660px;
     border-radius: 20%;
     margin: 50px;
+    object-fit: cover;
   }
 
   .integrantes {
