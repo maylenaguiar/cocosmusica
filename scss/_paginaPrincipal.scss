@@ -11,6 +11,7 @@ body{
 h1{
 	text-align: $textos-centrados;
 	font-size: 24px;
+    text-shadow: 2px 2px black;
 }	
 /* Navegador*/
 nav{
@@ -38,7 +39,6 @@ nav{
 /*Logo*/
 .logo{
 	width: 180px;
-	height: 120px; 
 }
 .logo:hover{
     background-color:black;
@@ -69,7 +69,7 @@ h2{
     font-size: 22px;
 }
 h3{
-	font-size: 16px;
+	font-size: 18px;
 	text-align: $textos-centrados;
 	margin-top: 60px;
 	margin-bottom: 20px;
@@ -128,7 +128,7 @@ ul{ color: #FFFFFF;
 }
 h3{ 
     text-align: center;
-    font-size: 22px;
+    font-size: 26px;
 }
 /* Navegador*/
 nav {
@@ -198,7 +198,11 @@ nav {
 /* Presentación */
 .fotosLocas{
         display:block;
+        padding-top: 50px;
+        padding-bottom: 20px; 
+        margin-top: 50px; 
     }
+
 .animate__animated.animate__bounceInRight{
     --animate-duration: 4s;
     animation-iteration-count: 5;
@@ -209,14 +213,63 @@ nav {
 }
 
 .titulos{
-        border-radius: 10%;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 22px;
-        color: rgb(36, 215, 221);
-        text-align: $textos-centrados;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 22px;
+    color: rgb(36, 215, 221);
+    text-align: $textos-centrados;
+    border-radius: 30%;
+    
+    h4{
+        padding-top: 50px;
+        padding-bottom: 30px;
+
     }
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 453px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 30%;
+  }
+  
+  .flip-card-back {
+    background-color:black;
+    color: white;
+    border-radius: 30%;
+    transform: rotateY(180deg);
+  }
+
 /* Redes*/
 .redes-flex{
     display: flex;
@@ -236,5 +289,10 @@ footer{
     color:#FFFFFF;
     text-align:center;
     padding-top: 20px;
+
+    .derechos{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 }

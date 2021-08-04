@@ -9,10 +9,9 @@ form{
 	display: flex;
 	justify-content: center;
 	color:#FFFFFF;
-	text-align:center;
+	text-align: $textos-centrados;
 	font-size:14px;
-	background-image: url(../img/verde.jpg);
-	background-size: 100%;
+	background-color: black;
 	margin: 50px;
 	border-radius: 10%;
 }
